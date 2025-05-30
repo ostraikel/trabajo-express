@@ -24,7 +24,7 @@ function  enviarCursoMatematicas () {
     fetch("https://matematicas.com/api/cursos", {
         method: "POST",
         headers:{
-            "content-type": "aplication/json"
+            "content-type": "application/json"
         },
         body: json.stringfy(infoCurso)
     
