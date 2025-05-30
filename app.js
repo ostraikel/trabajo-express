@@ -26,7 +26,7 @@ function  enviarCursoMatematicas () {
         headers:{
             "content-type": "application/json"
         },
-        body: json.stringfy(infoCurso)
+        body: json.stringfy(CursoMatematicas)
     
     })
     .then(response => response.json())
@@ -51,10 +51,10 @@ function enviarCursoProgramacion () {
             vistas: 34567,
             nivel: 'avanzado' 
     };
-    fetch("https:/7programacion.com/api/curso", {
+    fetch("https:/programacion.com/api/curso", {
         method:"POST",
         headers: {
-            "content-type": "aplication/json"
+            "content-type": "application/json"
         },
         body:json.stringfy(CursoProgramacion)
 
